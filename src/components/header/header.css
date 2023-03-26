@@ -83,6 +83,10 @@ header{
     .me{
         width: 80vw;
         height: 55vh;
-        margin: 2rem auto;
+        margin: 3rem auto !important;
+    }
+    .main__img{
+        margin-top: 2.5rem;
+        overflow: hidden;
     }
 }
