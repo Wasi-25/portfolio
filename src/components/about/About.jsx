@@ -30,7 +30,7 @@ const About = () => {
               <small>6+ Completed</small>
             </article>
           </div>
-          <p>I am Wasiullah Khalique, I am a fresh and enthusiastic Fullstack Web Developer. I create dynamic and engaging web applications. I am constantly seeking to expand my skillset and deliver innovative solutions to clients.</p>
+          <p>I am Wasiullah Khalique, a fresh and enthusiastic Fullstack Web Developer. I create dynamic and engaging web applications. I am constantly seeking to expand my skillset and deliver innovative solutions to clients.</p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
