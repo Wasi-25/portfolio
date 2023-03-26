@@ -80,10 +80,4 @@ header{
         height: 100vh;
         padding-top: 3rem !important;
     }
-    .me{
-        height: 55vh;
-    }
-    .main__img{
-        margin-top: -1.2rem;
-    }
 }
