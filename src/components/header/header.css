@@ -81,7 +81,6 @@ header{
         padding-top: 1rem !important;
     }
     .me{
-        margin-left: 12px;
-        margin-right: 12px;
+        margin: 0 auto 3rem;
     }
 }
