@@ -78,10 +78,11 @@ header{
     }
     header{
         height: 100vh;
-        padding-top: 1rem !important;
+        padding-top: 3rem !important;
     }
     .me{
-        width: 70vw;
-        margin: auto;
+        width: 80vw;
+        height: 55vh;
+        margin: 2rem auto;
     }
 }
