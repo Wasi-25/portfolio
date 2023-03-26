@@ -81,6 +81,6 @@ header{
         padding-top: 1rem !important;
     }
     .me{
-        margin: 1rem auto;
+        width: 70vw;
     }
 }
