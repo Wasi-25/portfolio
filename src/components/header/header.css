@@ -81,12 +81,10 @@ header{
         padding-top: 3rem !important;
     }
     .me{
-        width: 80vw;
         height: 55vh;
-        margin: 3rem auto !important;
     }
     .main__img{
-        margin-top: 2.5rem;
+        margin-top: 1.5rem;
         overflow: hidden;
     }
 }
