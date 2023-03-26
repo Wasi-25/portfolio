@@ -56,8 +56,8 @@ const Portfolio = () => {
       image: IMG6,
       title: "Portfolio Website",
       about:"Created this Portfolio Website by using React JS.",
-      github:"#",
-      demo: "#"
+      github:"https://github.com/Wasi-25/portfolio",
+      demo: "https://wasiullahkhalique.netlify.app/"
     }
   ]
 

@@ -70,4 +70,7 @@ input, textarea{
     .container.contact__container{
         width: var(--container-width-ms);
     }
+    button{
+        width: 58% !important;
+    }
 }
