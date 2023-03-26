@@ -82,5 +82,6 @@ header{
     }
     .me{
         width: 70vw;
+        margin: auto;
     }
 }
