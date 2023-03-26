@@ -83,8 +83,4 @@ header{
     .me{
         height: 55vh;
     }
-    .main__img{
-        margin-top: 1.5rem;
-        overflow: hidden;
-    }
 }
