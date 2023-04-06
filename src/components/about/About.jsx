@@ -1,7 +1,6 @@
 import React from 'react';
 import "./about.css";
 import ME from "../../assets/me-about.jpeg";
-import {FaAward} from "react-icons/fa";
 import {VscFolderLibrary} from "react-icons/vsc";
 
 const About = () => {
@@ -19,18 +18,12 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className='about__card'>
-              <FaAward className='about__icon'/>
-              <h5>Experience</h5>
-              <small>Fresher</small>
-            </article>
-
-            <article className='about__card'>
               <VscFolderLibrary className='about__icon'/>
               <h5>Projects</h5>
               <small>6+ Completed</small>
             </article>
           </div>
-          <p>I am Wasiullah Khalique, a fresh and enthusiastic Fullstack Web Developer. I create dynamic and engaging web applications. I am constantly seeking to expand my skillset and deliver innovative solutions to clients.</p>
+          <p>I am Wasiullah Khalique, a enthusiastic Fullstack Web Developer. I create dynamic and engaging web applications. I am constantly seeking to expand my skillset and deliver innovative solutions to clients.</p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
