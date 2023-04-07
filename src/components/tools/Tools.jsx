@@ -7,7 +7,7 @@ import IMG4 from "../../assets/postman.png";
 import IMG5 from "../../assets/render.png";
 import IMG6 from "../../assets/vscode.png";
 
-const Portfolio = () => {
+const Tools = () => {
 
 
   const data =[
@@ -44,15 +44,15 @@ const Portfolio = () => {
   ]
 
   return (
-    <section id='projects'>
+    <section id='tools'>
       <h2>Tools</h2>
 
-      <div className="container portfolio__container">
+      <div className="container tools__container">
         {
-          data.map(({id, title, image, github, demo, about})=>{
+          data.map(({id, title, image})=>{
             return(
-              <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
+              <article key={id} className="tools__item">
+              <div className="tools__item-image">
                 <img src={image} alt={title} />
               </div>
               <h3>{title}</h3>
@@ -65,4 +65,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Tools;
