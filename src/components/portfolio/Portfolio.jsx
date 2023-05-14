@@ -6,6 +6,7 @@ import IMG3 from "../../assets/note-app.png";
 import IMG4 from "../../assets/weather-react.png";
 import IMG5 from "../../assets/weather-node.png";
 import IMG6 from "../../assets/portfolio.png";
+import IMG7 from "../../assets/food.png";
 
 const Portfolio = () => {
 
@@ -20,9 +21,17 @@ const Portfolio = () => {
       demo: "https://mygram.onrender.com/"
     },
     {
+      id:7,
+      image: IMG7,
+      title: "Food Delivery App",
+      about:"FoodHut is a Food Delivery Web App created with MERN (MongoDB, ExpressJS, ReactJS, NodeJS)",
+      github:"https://github.com/Wasi-25/FoodHut/",
+      demo: "https://foodhut.onrender.com/"
+    },
+    {
       id:2,
       image: IMG2,
-      title: "Chat Application",
+      title: "Real-time Chat Application",
       about:"WhatsChat is a Real-time Chat Application created using React JS and Socket.io",
       github:"https://github.com/Wasi-25/ChatApp",
       demo: "https://whats-chat2.netlify.app/"
@@ -52,7 +61,7 @@ const Portfolio = () => {
       demo: "https://weatherapp-z762.onrender.com/"
     },
     {
-      id:5,
+      id:6,
       image: IMG6,
       title: "Portfolio Website",
       about:"Created this Portfolio Website by using React JS.",

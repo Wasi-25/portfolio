@@ -20,7 +20,7 @@ const About = () => {
             <article className='about__card'>
               <VscFolderLibrary className='about__icon'/>
               <h5>Projects</h5>
-              <small>6+ Completed</small>
+              <small>7+ Completed</small>
             </article>
           </div>
           <p>I am Wasiullah Khalique, a enthusiastic Fullstack Web Developer. I create dynamic and engaging web applications. I am constantly seeking to expand my skillset and deliver innovative solutions to clients.</p>
