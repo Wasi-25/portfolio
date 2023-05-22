@@ -22,7 +22,7 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon"/>
               <div>
-                <h4>CSS3</h4>
+                <h4>CSS</h4>
               </div>
             </article>
             
@@ -44,6 +44,20 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icon"/>
               <div>
                 <h4>React JS</h4>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"/>
+              <div>
+                <h4>Redux</h4>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"/>
+              <div>
+                <h4>Material UI</h4>
               </div>
             </article>
             
@@ -70,6 +84,27 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icon"/>
               <div>
                 <h4>MongoDB</h4>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"/>
+              <div>
+                <h4>REST API</h4>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"/>
+              <div>
+                <h4>Git</h4>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"/>
+              <div>
+                <h4>Socket IO</h4>
               </div>
             </article>
             
