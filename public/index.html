@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" id="favicon" href="/src/assets/default-favicon.png">
   <script>
     document.addEventListener('visibilitychange', function() {
+      var favicon = document.getElementById('favicon');
       if (document.hidden) {
         document.title = "Come back! I miss you!";
+        favicon.href = "/src/assets/favicon-emoji.png";
       } else {
         document.title = "Wasiullah Khalique | Web Developer";
+        favicon.href = "/src/assets/default-favicon.png";
       }
     });
   </script>
