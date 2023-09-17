@@ -64,20 +64,21 @@ header{
 }
 
 
-/* MEDIA QUERIES (MEDIUM DEVICES)*/
-@media screen and (max-width: 1024px){
-    header{
-        height: 68vh;
-    }
-}
-
 /* MEDIA QUERIES (SMALL DEVICES)*/
 @media screen and (max-width: 600px){
     .header__socials, .scroll__down{
         display: none;
     }
     header{
-        height: 100vh;
+        height: 120vh;
         padding-top: 3rem !important;
     }
+    .me{
+        width: 22rem; 
+        height: 30rem;
+    }
+    .main__img{
+    height: 100%;
+    margin-top: 0rem;
+}
 }

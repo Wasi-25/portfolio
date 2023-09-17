@@ -7,6 +7,7 @@ import Tools from "./components/tools/Tools";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
 import Footer from "./components/footer/Footer";
+import Webdesign from './components/webdesign/Webdesign';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <About />
       <Experience />
       <Portfolio />
+      <Webdesign />
       <Tools />
       <Contact />
       <Footer />
