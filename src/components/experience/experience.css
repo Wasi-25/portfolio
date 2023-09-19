@@ -1,5 +1,5 @@
 #experience{
-    height: 100vh;
+    height: max-content;
 }
 .experience__container{
     display: grid;
