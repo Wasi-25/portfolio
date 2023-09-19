@@ -1,8 +1,11 @@
+#experience{
+    height: 100vh;
+}
 .experience__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    height: 25rem;
+    height: max-content;
 }
 
 .experience__container > div{
