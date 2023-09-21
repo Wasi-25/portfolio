@@ -1,3 +1,6 @@
+#webdesign{
+    width: 90%;
+}
 .webdesign__container{
     display: grid;
     grid-template-columns: 1fr;
