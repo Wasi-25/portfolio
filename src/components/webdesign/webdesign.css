@@ -1,11 +1,7 @@
-#webdesign{
-    width: 90%;
-}
 .webdesign__container{
     display: grid;
     grid-template-columns: 1fr;
     gap: 5rem;
-    width: 60% !important;
 }
 
 .webdesign__item{
