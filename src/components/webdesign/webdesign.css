@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 5rem;
-    width: 60% !important;
 }
 
 .webdesign__item{
@@ -50,6 +49,10 @@
     .webdesign__container{
         grid-template-columns: 1fr;
         gap: 1rem;   
+        width: 85%;
+    }
+    .webdesign__item{
+        padding: 1.2rem;
     }
     .webdesign__item h3{
         font-size: 1rem;
