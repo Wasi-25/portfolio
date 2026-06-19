@@ -3,8 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wasiullah Khalique | Software Developer</title>
+     <link rel="icon" href="/sunglass-favicon.svg" id="favicon"/>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Fullstack Software Developer based in Abu Dhabi. React, Node.js, AI Automation." />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script>
+        document.addEventListener('visibilitychange', function() {
+          var favicon = document.getElementById("favicon");
+          if (document.hidden) {
+            document.title = "Come back, I miss you!";
+            favicon.setAttribute("href", "/favicon.svg" )
+          } else {
+            document.title = "Wasiullah Khalique | Software Developer";
+            favicon.setAttribute("href", "/sunglass-favicon.svg" )
+          }
+        });
+      </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
