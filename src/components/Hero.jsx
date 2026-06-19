@@ -23,7 +23,7 @@ export default function Hero() {
               <span className="text-[#a78bfa]">Khalique</span>
             </h1>
 
-            <p className="text-base text-[rgba(255,255,255,0.52)] leading-[1.8] max-w-md mx-auto md:mx-0 mb-8">
+            <p className="text-[rgba(255,255,255,0.52)] leading-[1.8] max-w-md mx-auto md:mx-0 mb-8">
             Fullstack developer with 3+ years building web apps for clients across India and UAE - spanning frontend interfaces, backend APIs, database design, real-time features, and third-party integrations.
             </p>
 
