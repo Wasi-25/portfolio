@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+  }
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg bg-[#a78bfa] text-[#0a0a0a] font-semibold text-sm cursor-pointer border-none transition-opacity hover:opacity-85 no-underline;
+  }
+  .btn-outline {
+    @apply inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg border border-[rgba(167,139,250,0.35)] text-[rgba(255,255,255,0.7)] font-medium text-sm no-underline transition-colors hover:border-[rgba(167,139,250,0.7)] hover:text-[#a78bfa];
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg border border-[rgba(255,255,255,0.1)] text-[rgba(255,255,255,0.4)] font-normal text-sm no-underline;
+  }
+  .section-eyebrow {
+    @apply text-[0.78rem] text-[#a78bfa] tracking-[0.14em] uppercase font-medium mb-2;
+  }
+  .section-title {
+    @apply font-display text-3xl sm:text-4xl font-bold text-[#f0f0f0] tracking-tight mb-10;
+  }
+  .card {
+    @apply bg-[#111111] rounded-2xl border border-[rgba(255,255,255,0.06)] p-5 transition-colors;
+  }
+  .card-hover {
+    @apply hover:border-[rgba(167,139,250,0.28)];
+  }
+  .tag-purple {
+    @apply text-[0.7rem] text-[#a78bfa] bg-[rgba(167,139,250,0.08)] rounded px-2 py-0.5 border border-[rgba(167,139,250,0.14)];
+  }
+  .tag-gray {
+    @apply text-[0.7rem] text-[rgba(255,255,255,0.32)] bg-[rgba(255,255,255,0.04)] rounded px-2 py-0.5 border border-[rgba(255,255,255,0.07)];
+  }
+  .skill-pill {
+    @apply text-[0.78rem] text-[rgba(255,255,255,0.52)] bg-[rgba(255,255,255,0.04)] rounded px-2.5 py-0.5 border border-[rgba(255,255,255,0.07)];
+  }
+  .input-field {
+    @apply w-full bg-[#141414] border border-[rgba(255,255,255,0.08)] rounded-xl px-4 py-3 text-[#e8e8e8] text-sm outline-none font-sans transition-colors focus:border-[rgba(167,139,250,0.4)];
+  }
+  .timeline-dot-active {
+    @apply absolute -left-[5px] top-[5px] w-[10px] h-[10px] rounded-full bg-[#a78bfa] border-2 border-[#a78bfa];
+  }
+  .timeline-dot {
+    @apply absolute -left-[5px] top-[5px] w-[10px] h-[10px] rounded-full bg-[#1a1a1a] border-2 border-[rgba(255,255,255,0.15)];
+  }
+}

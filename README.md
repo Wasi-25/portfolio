@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+# Wasiullah Khalique - Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern dark portfolio built with **React + Vite + Tailwind CSS**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Structure
 
-### `npm start`
+```
+portfolio/
+├── public/
+│   └── Wasiullah_Khalique_CV.pdf     ← place your CV here
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Education.jsx             ← separate section
+│   │   ├── Testimonials.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Footer.jsx
+│   │   └── SectionHeader.jsx         ← shared heading component
+│   ├── data/
+│   │   └── index.js                  ← ALL your content lives here
+│   ├── utils/
+│   │   └── scroll.js                 ← smooth scroll helper
+│   ├── styles/
+│   │   └── index.css                 ← Tailwind directives + custom classes
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+└── postcss.config.js
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup (Step-by-Step)
 
-### `npm test`
+### 1. Prerequisites
+Make sure you have **Node.js v18+** installed.
+Check with: `node -v`
+Download from: https://nodejs.org
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Get the project files
+Copy the entire `portfolio/` folder to wherever you keep your projects.
 
-### `npm run build`
+### 3. Install dependencies
+```bash
+cd portfolio
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 4. Add your CV
+Place your `Wasiullah_Khalique_CV.pdf` inside the `public/` folder.
+The download buttons already point to `/Wasiullah_Khalique_CV.pdf`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5. Add your photo
+Replace the placeholder inside `src/components/Hero.jsx`.
+Find the comment `TO ADD YOUR PHOTO` and replace it with:
+```jsx
+<img
+  src="/photo.jpg"
+  alt="Wasiullah Khalique"
+  className="w-full h-full rounded-full object-cover"
+/>
+```
+Then put `photo.jpg` inside the `public/` folder.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 6. Run locally
+```bash
+npm run dev
+```
+Open http://localhost:5173 in your browser.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Set up Formspree (Contact Form)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Go to https://formspree.io and create a free account
+2. Click **New Form** → name it "Portfolio Contact"
+3. Copy your Form ID (looks like `xyzabcde`)
+4. Open `src/components/Contact.jsx`
+5. Replace `YOUR_FORM_ID`:
+   ```js
+   const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xyzabcde'
+   ```
+6. Submissions go straight to `wasiullahkhalique25@gmail.com`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Update your content
 
-## Learn More
+All your personal data is in **one place**: `src/data/index.js`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| What to update       | Where                          |
+|----------------------|--------------------------------|
+| Projects             | `PROJECTS` array               |
+| Work experience      | `EXPERIENCE` array             |
+| Education            | `EDUCATION` array              |
+| Skills               | `SKILLS` array                 |
+| Testimonials         | `TESTIMONIALS` array           |
+| Social/contact links | `CONTACT_LINKS` array          |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Deploy to Netlify (your existing setup)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Option A - Push to GitHub (recommended)
+```bash
+# In your portfolio folder:
+git init
+git add .
+git commit -m "initial portfolio"
+git remote add origin https://github.com/Wasi-25/YOUR_REPO_NAME.git
+git push -u origin main
+```
+Netlify will auto-build on every push.
 
-### Analyzing the Bundle Size
+**Important:** In your Netlify site settings, set:
+- **Build command:** `npm run build`
+- **Publish directory:** `dist`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Option B - Manual deploy
+```bash
+npm run build
+```
+Then drag & drop the `dist/` folder into Netlify's manual deploy panel.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Customisation tips
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Colors:** Edit `tailwind.config.js` → `theme.extend.colors`
+- **Fonts:** Change the Google Fonts import in `index.html`
+- **New section:** Create `src/components/Blog.jsx`, add it to `App.jsx`, add data to `src/data/index.js`

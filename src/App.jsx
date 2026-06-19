@@ -1,29 +1,25 @@
-import React from 'react';
-import Header from "./components/header/Header";
-import Nav from "./components/nav/Nav";
-import About from "./components/about/About";
-import Experience from "./components/experience/Experience";
-import Tools from "./components/tools/Tools";
-import Contact from "./components/contact/Contact";
-import Portfolio from "./components/portfolio/Portfolio";
-import Footer from "./components/footer/Footer";
-import Webdesign from './components/webdesign/Webdesign';
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Experience from './components/Experience'
+import Education from './components/Education'
+import Testimonials from './components/Testimonials'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
-
-const App = () => {
+export default function App() {
   return (
-    <>
-      <Header />
-      <Nav />
-      <About />
+    <div className="bg-base min-h-screen">
+      <Navbar />
+      <Hero />
+      <Skills />
+      <Projects />
       <Experience />
-      <Portfolio />
-      <Webdesign />
-      <Tools />
+      <Education />
+      <Testimonials />
       <Contact />
       <Footer />
-    </>
+    </div>
   )
 }
-
-export default App;
