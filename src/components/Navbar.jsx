@@ -48,7 +48,7 @@ export default function Navbar() {
             </button>
           ))}
           <a
-            href="/Wasiullah_Khalique_CV.pdf"
+            href="/Wasiullah_Khalique_Resume.pdf"
             download
             className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-md border border-[rgba(167,139,250,0.4)]
                        text-[#a78bfa] text-[0.8rem] font-medium no-underline hover:bg-[rgba(167,139,250,0.08)] transition-colors"
@@ -87,7 +87,7 @@ export default function Navbar() {
             </button>
           ))}
           <a
-            href="/Wasiullah_Khalique_CV.pdf"
+            href="/Wasiullah_Khalique_Resume.pdf"
             download
             onClick={() => setMenuOpen(false)}
             className="flex items-center gap-2 px-6 py-4 text-[0.95rem] text-[#a78bfa] no-underline"

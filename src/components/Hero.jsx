@@ -32,7 +32,7 @@ export default function Hero() {
               <button onClick={() => scrollToSection('projects')} className="btn-primary">
                 View projects <i className="ti ti-arrow-right text-xs" />
               </button>
-              <a href="/Wasiullah_Khalique_CV.pdf" download className="btn-outline">
+              <a href="/Wasiullah_Khalique_Resume.pdf" download className="btn-outline">
                 <i className="ti ti-download text-xs" /> Download Resume
               </a>
               <button onClick={() => scrollToSection('contact')} className="btn-ghost">
